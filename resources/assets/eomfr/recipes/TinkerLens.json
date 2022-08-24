@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IN ",
+    "PGN",
+    "IN "
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "N": {
+      "type": "forge:ore_dict",
+      "ore": "nuggetLead"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"lead\"}}",
+      "item": "minefantasyreforged:plate"
+    }
+  },
+  "result": {
+    "item": "embers:tinker_lens"
+  }
+}

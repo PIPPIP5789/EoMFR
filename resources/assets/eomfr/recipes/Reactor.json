@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "ICI",
+    "PBP"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotCopper"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"silver\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "C": {
+      "item": "embers:wildfire_core"
+    },
+    "B": {
+      "item": "embers:block_caminite_brick"
+    }
+  },
+  "result": {
+    "item": "embers:reactor"
+  }
+}

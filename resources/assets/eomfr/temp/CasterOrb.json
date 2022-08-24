@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IEI",
+    "ICI",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "E": {
+      "item": "embers:crystal_ember"
+    }
+  },
+  "result": {
+    "item": "embers:caster_orb"
+  }
+}

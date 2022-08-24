@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "GCG",
+    " G "
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"copper\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "G": {
+      "type": "forge:ore_dict",
+      "ore": "blockGlass"
+    },
+    "C": {
+      "item": "embers:crystal_ember"
+    }
+  },
+  "result": {
+    "item": "embers:ember_cartridge"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NRN",
+    " P ",
+    "NEN"
+  ],
+  "key": {
+    "E": {
+      "nbt": "{mf_custom_materials:{main_material:\"electrum\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "N": {
+      "item": "embers:nugget_electrum"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "embers:clockwork_attenuator"
+  }
+}

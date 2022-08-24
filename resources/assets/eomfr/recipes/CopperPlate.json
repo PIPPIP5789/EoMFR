@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "I I",
+    " S "
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "nbt": "{mf_custom_materials:{main_material:\"composite_alloy\"}}",
+      "item": "minefantasyreforged:bar"
+    }
+  },
+  "result": {
+    "item": "embers:tinker_hammer"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "BCB",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"iron\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "B": {
+      "item": "minecraft:iron_bars"
+    },
+    "C": {
+      "item": "embers:glimmer_crystal"
+    }
+  },
+  "result": {
+    "item": "embers:glimmer_lamp"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPI"
+  ],
+  "key": {
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"iron\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "S": {
+      "item": "embers:stairs_caminite_brick"
+    }
+  },
+  "result": {
+    "item": "embers:mech_accessor"
+  }
+}

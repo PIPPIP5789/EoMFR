@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "PEP",
+    "IMI"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSilver"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"silver\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "M": {
+      "item": "embers:mech_core"
+    },
+    "E": {
+      "item": "embers:ember_cluster"
+    }
+  },
+  "result": {
+    "item": "embers:catalyzer"
+  }
+}

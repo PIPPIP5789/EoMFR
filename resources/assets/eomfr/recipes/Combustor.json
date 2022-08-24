@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "PEP",
+    "CMC"
+  ],
+  "key": {
+    "C": {
+      "type": "forge:ore_dict",
+      "ore": "ingotCopper"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "M": {
+      "item": "embers:mech_core"
+    },
+    "E": {
+      "item": "embers:ember_cluster"
+    }
+  },
+  "result": {
+    "item": "embers:combustor"
+  }
+}

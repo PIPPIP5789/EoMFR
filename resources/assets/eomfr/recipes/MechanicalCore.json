@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    " C ",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "C": {
+      "nbt": "{mf_custom_materials:{main_material:\"composite_alloy\"}}",
+      "item": "minefantasyreforged:plate"
+    }
+  },
+  "result": {
+    "item": "embers:mech_core"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    "DCD",
+    "BSB"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSilver"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"silver\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "D": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "C": {
+      "item": "embers:wildfire_core"
+    },
+    "B": {
+      "item": "embers:block_caminite_brick"
+    }
+  },
+  "result": {
+    "item": "embers:ember_injector"
+  }
+}

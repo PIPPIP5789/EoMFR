@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " IP",
+    "CCI",
+    "CC "
+  ],
+  "key": {
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "C": {
+      "type": "forge:ore_dict",
+      "ore": "ingotCopper"
+    }
+  },
+  "result": {
+    "item": "embers:superheater"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " DP",
+    "DPI",
+    "ES "
+  ],
+  "key": {
+    "D": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "E": {
+      "item": "embers:shard_ember"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "embers:ignition_cannon"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    " P ",
+    " A "
+  ],
+  "key": {
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"iron\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotAluminum"
+    },
+    "D": {
+      "item": "embers:aspectus_silver"
+    }
+  },
+  "result": {
+    "item": "embers:spark_plug"
+  }
+}

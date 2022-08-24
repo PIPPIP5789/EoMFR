@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PEP",
+    "PEP",
+    "DBD"
+  ],
+  "key": {
+    "D": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"copper\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "E": {
+      "item": "embers:crystal_ember"
+    },
+    "B": {
+      "item": "embers:block_caminite_brick"
+    }
+  },
+  "result": {
+    "item": "embers:beam_cannon"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R",
+    "P",
+    "C"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "nbt": "{mf_custom_materials:{main_material:\"copper\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "embers:ember_gauge"
+  }
+}

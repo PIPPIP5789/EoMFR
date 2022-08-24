@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PCP",
+    "DED",
+    " S "
+  ],
+  "key": {
+    "D": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "E": {
+      "item": "embers:shard_ember"
+    },
+    "C": {
+      "nbt": "{mf_custom_materials:{main_material:\"copper\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "embers:axe_clockwork"
+  }
+}

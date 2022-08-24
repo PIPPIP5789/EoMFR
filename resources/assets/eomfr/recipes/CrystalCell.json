@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "PEP",
+    "CDC"
+  ],
+  "key": {
+    "E": {
+      "item": "embers:crystal_ember"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "C": {
+      "item": "embers:block_copper"
+    },
+    "D": {
+      "item": "embers:block_dawnstone"
+    }
+  },
+  "result": {
+    "item": "embers:crystal_cell"
+  }
+}

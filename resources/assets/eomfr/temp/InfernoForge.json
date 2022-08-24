@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DPD",
+    "ICI",
+    "XWX"
+  ],
+  "key": {
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"iron\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "X": {
+      "item": "embers:block_caminite_brick"
+    },
+    "W": {
+      "item": "embers:wildfire_core"
+    },
+    "C": {
+      "item": "embers:block_copper"
+    },
+    "D": {
+      "item": "embers:block_dawnstone"
+    }
+  },
+  "result": {
+    "item": "embers:inferno_forge"
+  }
+}

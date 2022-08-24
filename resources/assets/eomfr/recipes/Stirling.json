@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    "IEI",
+    "SBS"
+  ],
+  "key": {
+    "E": {
+      "item": "embers:crystal_ember"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "item": "embers:wildfire_core"
+    },
+    "E": {
+      "item": "embers:shard_ember"
+    },
+    "B": {
+      "item": "embers:block_copper"
+    }
+  },
+  "result": {
+    "item": "embers:stirling"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "P P",
+    "ISI"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotBronze"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"bronze\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "S": {
+      "item": "embers:spark_plug"
+    }
+  },
+  "result": {
+    "item": "embers:reaction_chamber"
+  }
+}

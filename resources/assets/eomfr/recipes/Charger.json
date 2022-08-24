@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "DCD",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "D": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "C": {
+      "type": "forge:ore_dict",
+      "ore": "ingotCopper"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"copper\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "X": {
+      "nbt": "{mf_custom_materials:{main_material:\"iron\"}}",
+      "item": "minefantasyreforged:plate"
+    }
+  },
+  "result": {
+    "item": "embers:charger"
+  }
+}

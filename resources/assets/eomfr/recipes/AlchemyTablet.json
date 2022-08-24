@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "SCS",
+    "BDB"
+  ],
+  "key": {
+    "D": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "B": {
+      "item": "embers:block_caminite_brick"
+    },
+    "C": {
+      "nbt": "{mf_custom_materials:{main_material:\"copper\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "S": {
+      "item": "embers:stairs_caminite_brick"
+    }
+  },
+  "result": {
+    "item": "embers:alchemy_tablet"
+  }
+}

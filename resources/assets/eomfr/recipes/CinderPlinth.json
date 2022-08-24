@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "IFI",
+    "PBP"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSilver"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"lead\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "B": {
+      "item": "embers:block_caminite_brick"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "embers:cinder_plinth"
+  }
+}

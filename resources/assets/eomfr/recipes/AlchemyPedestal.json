@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    "IEI",
+    "SBS"
+  ],
+  "key": {
+    "E": {
+      "item": "embers:crystal_ember"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"dawnstone\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotDawnstone"
+    },
+    "S": {
+      "item": "embers:stairs_caminite_brick"
+    },
+    "B": {
+      "item": "embers:block_copper"
+    }
+  },
+  "result": {
+    "item": "embers:alchemy_pedestal"
+  }
+}

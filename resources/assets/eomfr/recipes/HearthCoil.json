@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "IBI",
+    " M "
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"copper\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "B": {
+      "item": "embers:block_copper"
+    },
+    "M": {
+      "item": "embers:mech_core"
+    }
+  },
+  "result": {
+    "item": "embers:heat_coil"
+  }
+}

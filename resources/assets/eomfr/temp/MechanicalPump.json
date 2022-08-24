@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TPT",
+    "PPP",
+    "BEB"
+  ],
+  "key": {
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"iron\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "T": {
+      "item": "embers:pipe"
+    },
+    "E": {
+      "item": "embers:pump"
+    },
+    "B": {
+      "item": "embers:brick_caminite"
+    }
+  },
+  "result": {
+    "item": "embers:mechanical_pump"
+  }
+}

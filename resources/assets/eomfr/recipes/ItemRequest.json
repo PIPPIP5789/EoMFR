@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SPS",
+    "AIP",
+    "SPS"
+  ],
+  "key": {
+    "S": {
+      "item": "embers:aspectus_silver"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"silver\"}}",
+      "item": "minefantasyreforged:plate"
+    },
+    "I": {
+      "item": "embers:item_pump"
+    },
+    "A": {
+      "item": "embers:intelligent_apparatus"
+    }
+  },
+  "result": {
+    "item": "embers:item_request"
+  }
+}

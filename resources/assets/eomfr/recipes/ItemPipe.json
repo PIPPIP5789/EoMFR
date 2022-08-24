@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "skill": "artisanry",
+  "research": "",
+  "tool_type": "hammer",
+  "is_tool_recipe": false,
+  "anvil_tier": -1,
+  "recipe_time": 2,
+  "recipe_hammer": -1,
+  "output_hot": false,
+  "pattern": [
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "type": "forge:ore_dict",
+      "ore": "ingotLead"
+    },
+    "P": {
+      "nbt": "{mf_custom_materials:{main_material:\"lead\"}}",
+      "item": "minefantasyreforged:plate"
+    }
+  },
+  "result": {
+    "item": "embers:item_pipe"
+  }
+}
