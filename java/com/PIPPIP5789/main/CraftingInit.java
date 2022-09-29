@@ -19,7 +19,8 @@ public class CraftingInit {
     public static void removeRecipes() {
         ForgeRegistry<IRecipe> recipeRegistry = (ForgeRegistry<IRecipe>) ForgeRegistries.RECIPES;
 
-        recipeRegistry.remove(RegistryManager.tinker_hammer.getRegistryName());        recipeRegistry.remove(RegistryManager.tinker_hammer.getRegistryName());
+        recipeRegistry.remove(RegistryManager.tinker_hammer.getRegistryName());
+        //recipeRegistry.remove(RegistryManager.tinker_hammer.getRegistryName());
         recipeRegistry.remove(RegistryManager.mech_core.getRegistryName());
 
         recipeRegistry.remove(RegistryManager.plate_copper.getRegistryName());

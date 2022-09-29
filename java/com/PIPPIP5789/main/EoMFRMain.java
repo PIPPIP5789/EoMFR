@@ -38,19 +38,17 @@ public class EoMFRMain
     public void preInit(FMLPreInitializationEvent event) {
         initFiles(event);
         logger = event.getModLog();
-        FluidInit.preInit(event);
-        StampInit.preInit(event);
+        FluidInit.preInitFluids(event);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        CraftingInit.removeRecipes();
-        StampInit.init(event);
+        StampInit.initStamps(event);
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-
+        CraftingInit.removeRecipes();
     }
 
     private static void initFiles(FMLPreInitializationEvent event) {
