@@ -1,5 +1,11 @@
 package com.PIPPIP5789.eomfr.main;
 
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class IOInit {
 
     public static final String
@@ -168,7 +174,7 @@ public class IOInit {
             "      \"ore\": \"ingotIron\"\n" +
             "    },\n" +
             "    \"C\": {\n" +
-            "    \"item\": \"minefantasyreforged:copper_ingot\"" +
+            "      \"item\": \"minefantasyreforged:copper_ingot\"" +
             "    },\n" +
             "    \"D\": {\n" +
             "      \"type\": \"oreDict\",\n" +
@@ -603,6 +609,40 @@ public class IOInit {
             "    \"item\": \"embers:ember_belt\"\n" +
             "  }\n" +
             "}",
+    EMBERBORE = "{\n" +
+            "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
+            "  \"skill\": \"artisanry\",\n" +
+            "  \"research\": \"ember_production\",\n" +
+            "  \"tool_type\": \"hammer\",\n" +
+            "  \"is_tool_recipe\": false,\n" +
+            "  \"anvil_tier\": -1,\n" +
+            "  \"recipe_time\": 2,\n" +
+            "  \"recipe_hammer\": -1,\n" +
+            "  \"output_hot\": false,\n" +
+            "  \"pattern\": [\n" +
+            "    \"SCS\",\n" +
+            "    \"SMS\",\n" +
+            "    \"III\"\n" +
+            "  ],\n" +
+            "  \"key\": {\n" +
+            "    \"C\": {\n" +
+            "      \"item\": \"minefantasyreforged:copper_ingot\"" +
+            "    },\n" +
+            "    \"I\": {\n" +
+            "      \"type\": \"oreDict\",\n" +
+            "      \"ore\": \"ingotIron\"\n" +
+            "    },\n" +
+            "    \"S\": {\n" +
+            "      \"item\": \"embers:stairs_caminite_brick\"\n" +
+            "    },\n" +
+            "    \"M\": {\n" +
+            "      \"item\": \"embers:mech_core\"\n" +
+            "    }\n" +
+            "  },\n" +
+            "  \"result\": {\n" +
+            "    \"item\": \"embers:ember_bore\"\n" +
+            "  }\n" +
+            "}",
     EMBERBULB = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
@@ -709,7 +749,7 @@ public class IOInit {
     EMBERGAUGE = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
-            "  \"research\": \"\",\n" +
+            "  \"research\": \"Gadgets\",\n" +
             "  \"tool_type\": \"hammer\",\n" +
             "  \"is_tool_recipe\": false,\n" +
             "  \"anvil_tier\": -1,\n" +
@@ -907,7 +947,7 @@ public class IOInit {
     FLUIDGAUGE = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
-            "  \"research\": \"\",\n" +
+            "  \"research\": \"Gadgets\",\n" +
             "  \"tool_type\": \"hammer\",\n" +
             "  \"is_tool_recipe\": false,\n" +
             "  \"anvil_tier\": -1,\n" +
@@ -938,7 +978,7 @@ public class IOInit {
     FLUIDPIPE = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
-            "  \"research\": \"\",\n" +
+            "  \"research\": \"Piping\",\n" +
             "  \"tool_type\": \"hammer\",\n" +
             "  \"is_tool_recipe\": false,\n" +
             "  \"anvil_tier\": -1,\n" +
@@ -965,7 +1005,7 @@ public class IOInit {
     FLUIDTRANSFER = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
-            "  \"research\": \"\",\n" +
+            "  \"research\": \"Piping\",\n" +
             "  \"tool_type\": \"hammer\",\n" +
             "  \"is_tool_recipe\": false,\n" +
             "  \"anvil_tier\": -1,\n" +
@@ -1143,7 +1183,7 @@ public class IOInit {
     ITEMTRANSFER = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
-            "  \"research\": \"\",\n" +
+            "  \"research\": \"Piping\",\n" +
             "  \"tool_type\": \"hammer\",\n" +
             "  \"is_tool_recipe\": false,\n" +
             "  \"anvil_tier\": -1,\n" +
@@ -1273,7 +1313,7 @@ public class IOInit {
     MECHANICALCORE = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
-            "  \"research\": \"\",\n" +
+            "  \"research\": \"Mechanical Core\",\n" +
             "  \"tool_type\": \"hammer\",\n" +
             "  \"is_tool_recipe\": false,\n" +
             "  \"anvil_tier\": -1,\n" +
@@ -1302,7 +1342,7 @@ public class IOInit {
     MECHANICALPUMP = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
-            "  \"research\": \"\",\n" +
+            "  \"research\": \"Piping\",\n" +
             "  \"tool_type\": \"hammer\",\n" +
             "  \"is_tool_recipe\": false,\n" +
             "  \"anvil_tier\": -1,\n" +
@@ -1598,7 +1638,7 @@ public class IOInit {
     TINKERHAMMER = "{\n" +
             "  \"type\": \"CustomToolOreDictAnvilRecipes\",\n" +
             "  \"skill\": \"artisanry\",\n" +
-            "  \"research\": \"\",\n" +
+            "  \"research\": \"tinker_hammer\",\n" +
             "  \"tool_type\": \"hammer\",\n" +
             "  \"is_tool_recipe\": false,\n" +
             "  \"anvil_tier\": -1,\n" +
@@ -1649,7 +1689,7 @@ public class IOInit {
             "    },\n" +
             "    \"N\": {\n" +
             "      \"type\": \"oreDict\",\n" +
-            "      \"ore\": \"nuggetLead\"\n" +
+            "      \"ore\": \"nuggetGold\"\n" +
             "    },\n" +
             "    \"G\": {\n" +
             "      \"item\": \"minecraft:glass\"\n" +
@@ -1663,5 +1703,488 @@ public class IOInit {
             "    \"item\": \"embers:tinker_lens\"\n" +
             "  }\n" +
             "}";
+
+    public static void initTypes(FMLPreInitializationEvent event) {
+        try {
+            //String tempPath = "MineFantasyReforged/custom/registry/";
+
+            //String tempPath = "MineFantasyReforged/custom/recipes/";
+            String tempPath2 = "MineFantasyReforged/custom/registry/eomfr/";
+            //if(!new File(tempPath2).mkdirs()) {
+            //System.exit(-1);
+            //}
+            //Files.createDirectory(Paths.get(tempPath2));
+            //tempPath += "/";
+            new File(event.getModConfigurationDirectory(), tempPath2).mkdirs();
+            File tempFile = new File(event.getModConfigurationDirectory(), tempPath2 + "metal_types" + ".json");
+            //tempFile.mkdirs();
+            PrintWriter tempWriter = new PrintWriter(tempFile);
+
+            tempWriter.println("{\n" +
+                    "    \"mod\": \"eomfr\",\n" +
+                    "    \"metals\": [\n" +
+                    "        {\n" +
+                    "            \"name\": \"lead\",\n" +
+                    "            \"oreDictList\": \"ingotLead\",\n" +
+                    "            \"properties\": {\n" +
+                    "                \"tier\": 1,\n" +
+                    "                \"durability\": 1.6,\n" +
+                    "                \"flexibility\": 0.9,\n" +
+                    "                \"sharpness\": 1.3,\n" +
+                    "                \"hardness\": 2.5,\n" +
+                    "                \"resistance\": 20,\n" +
+                    "                \"density\": 3.5,\n" +
+                    "                \"melting_point\": 1400,\n" +
+                    "                \"rarity\": 0,\n" +
+                    "                \"craft_tier\": 1,\n" +
+                    "                \"craft_time_modifier\": 5.0,\n" +
+                    "                \"unbreakable\": false\n" +
+                    "            },\n" +
+                    "            \"armour_stats\": {\n" +
+                    "                \"cutting\": 1.0,\n" +
+                    "                \"blunt\": 1.0,\n" +
+                    "                \"piercing\": 1.0\n" +
+                    "            },\n" +
+                    "            \"color\": {\n" +
+                    "                \"red\": 140,\n" +
+                    "                \"green\": 127,\n" +
+                    "                \"blue\": 157\n" +
+                    "            }\n" +
+                    "        },\n" +
+                    "        {\n" +
+                    "            \"name\": \"dawnstone\",\n" +
+                    "            \"oreDictList\": \"ingotDawnstone\",\n" +
+                    "            \"properties\": {\n" +
+                    "                \"tier\": 5,\n" +
+                    "                \"durability\": 6.0,\n" +
+                    "                \"flexibility\": 1.5,\n" +
+                    "                \"sharpness\": 3.8,\n" +
+                    "                \"hardness\": 3.3,\n" +
+                    "                \"resistance\": 60,\n" +
+                    "                \"density\": 3.2,\n" +
+                    "                \"melting_point\": 2500,\n" +
+                    "                \"rarity\": 0,\n" +
+                    "                \"craft_tier\": 4,\n" +
+                    "                \"craft_time_modifier\": 10.0,\n" +
+                    "                \"unbreakable\": false\n" +
+                    "            },\n" +
+                    "            \"armour_stats\": {\n" +
+                    "                \"cutting\": 1.0,\n" +
+                    "                \"blunt\": 1.0,\n" +
+                    "                \"piercing\": 1.0\n" +
+                    "            },\n" +
+                    "            \"color\": {\n" +
+                    "                \"red\": 255,\n" +
+                    "                \"green\": 182,\n" +
+                    "                \"blue\": 72\n" +
+                    "            }\n" +
+                    "        },\n" +
+                    "        {\n" +
+                    "            \"name\": \"aluminum\",\n" +
+                    "            \"oreDictList\": \"ingotAluminum\",\n" +
+                    "            \"properties\": {\n" +
+                    "                \"tier\": 0,\n" +
+                    "                \"durability\": 1.2,\n" +
+                    "                \"flexibility\": 0.7,\n" +
+                    "                \"sharpness\": 0.0,\n" +
+                    "                \"hardness\": 1.2,\n" +
+                    "                \"resistance\": 10,\n" +
+                    "                \"density\": 2.0,\n" +
+                    "                \"melting_point\": 800,\n" +
+                    "                \"rarity\": -1,\n" +
+                    "                \"craft_tier\": -1,\n" +
+                    "                \"craft_time_modifier\": 2.0,\n" +
+                    "                \"unbreakable\": false\n" +
+                    "            },\n" +
+                    "            \"armour_stats\": {\n" +
+                    "                \"cutting\": 1.0,\n" +
+                    "                \"blunt\": 1.0,\n" +
+                    "                \"piercing\": 1.0\n" +
+                    "            },\n" +
+                    "            \"color\": {\n" +
+                    "                \"red\": 234,\n" +
+                    "                \"green\": 152,\n" +
+                    "                \"blue\": 134\n" +
+                    "            }\n" +
+                    "        },\n" +
+                    "        {\n" +
+                    "            \"name\": \"electrum\",\n" +
+                    "            \"oreDictList\": \"ingotElectrum\",\n" +
+                    "            \"properties\": {\n" +
+                    "                \"tier\": 4,\n" +
+                    "                \"durability\": 7.0,\n" +
+                    "                \"flexibility\": 1.5,\n" +
+                    "                \"sharpness\": 2.0,\n" +
+                    "                \"hardness\": 3.0,\n" +
+                    "                \"resistance\": 55,\n" +
+                    "                \"density\": 3.0,\n" +
+                    "                \"melting_point\": 2000,\n" +
+                    "                \"rarity\": 0,\n" +
+                    "                \"craft_tier\": 3,\n" +
+                    "                \"craft_time_modifier\": 8.0,\n" +
+                    "                \"unbreakable\": false\n" +
+                    "            },\n" +
+                    "            \"armour_stats\": {\n" +
+                    "                \"cutting\": 1.0,\n" +
+                    "                \"blunt\": 1.0,\n" +
+                    "                \"piercing\": 1.0\n" +
+                    "            },\n" +
+                    "            \"color\": {\n" +
+                    "                \"red\": 240,\n" +
+                    "                \"green\": 216,\n" +
+                    "                \"blue\": 113\n" +
+                    "            }\n" +
+                    "        },\n" +
+                    "        {\n" +
+                    "            \"name\": \"nickel\",\n" +
+                    "            \"oreDictList\": \"ingotNickel\",\n" +
+                    "            \"properties\": {\n" +
+                    "                \"tier\": 0,\n" +
+                    "                \"durability\": 1.2,\n" +
+                    "                \"flexibility\": 0.8,\n" +
+                    "                \"sharpness\": 0.5,\n" +
+                    "                \"hardness\": 1.0,\n" +
+                    "                \"resistance\": 50,\n" +
+                    "                \"density\": 3.0,\n" +
+                    "                \"melting_point\": 1200,\n" +
+                    "                \"rarity\": 0,\n" +
+                    "                \"craft_tier\": 0,\n" +
+                    "                \"craft_time_modifier\": 2.0,\n" +
+                    "                \"unbreakable\": false\n" +
+                    "            },\n" +
+                    "            \"armour_stats\": {\n" +
+                    "                \"cutting\": 1.0,\n" +
+                    "                \"blunt\": 1.0,\n" +
+                    "                \"piercing\": 1.0\n" +
+                    "            },\n" +
+                    "            \"color\": {\n" +
+                    "                \"red\": 171,\n" +
+                    "                \"green\": 181,\n" +
+                    "                \"blue\": 152\n" +
+                    "            }\n" +
+                    "        }\n" +
+                    "    ]\n" +
+                    "}");
+            tempWriter.flush();
+            tempWriter.close();
+        }
+        catch(IOException e) {
+        }
+    }
+
+    public static void initRecipes(FMLPreInitializationEvent event) {
+        try {
+            String path = "MineFantasyReforged/custom/recipes/anvil_recipes/";
+            File file = new File(event.getModConfigurationDirectory(), path +  "AlchemyPedestal" + ".json");
+            file.deleteOnExit();
+            PrintWriter writer = new PrintWriter(file);
+            writer.println(IOInit.ALCHEMYPEDESTAL);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "AlchemyTablet" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.ALCHEMYTABLET);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "AshenCloak" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.ASHENCLOAK);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "BeamCannon" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.BEAMCANNON);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "BeamSplitter" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.BEAMSPLITTER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Bin" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.BIN);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "CasterOrb" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.CASTERORB);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Catalyzer" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.CATALYZER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Charger" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.CHARGER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "CinderPlinth" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.CINDERPLINTH);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "ClockworkAttenuator" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.CLOCKWORKATTENUATOR);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "ClockworkAxe" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.CLOCKWORKAXE);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Combustor" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.COMBUSTOR);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "CrystalCell" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.CRYSTALCELL);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "DawnstoneMail" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.DAWNSTONEMAIL);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "DiffractionBarrel" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.DIFFRACTIONBARREL);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberActivator" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERACTIVATOR);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberBelt" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERBELT);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberBore" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERBORE);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberBulb" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERBULB);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberCartridge" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERCARTRIDGE);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberFunnel" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERFUNNEL);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberGauge" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERGAUGE);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberInjector" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERINJECTOR);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberPulser" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERPULSER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberRelay" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERRELAY);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberSiphon" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERSIPHON);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "EmberStaff" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.EMBERSTAFF);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "FluidGauge" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.FLUIDGAUGE);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "FluidPipe" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.FLUIDPIPE);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "FluidTransfer" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.FLUIDTRANSFER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "GlimmerLamp" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.GLIMMERLAMP);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "HearthCoil" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.HEARTHCOIL);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "IgnitionCannon" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.IGNITIONCANNON);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "InfernoForge" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.INFERNOFORGE);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "ItemTransfer" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.ITEMTRANSFER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "JetAugment" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.JETAUGMENT);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Lantern" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.LANTERN);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "MechAccessor" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.MECHACCESSOR);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "MechanicalCore" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.MECHANICALCORE);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "MechanicalPump" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.MECHANICALPUMP);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "MiniBoiler" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.MINIBOILER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Mixer" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.MIXER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Reactor" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.REACTOR);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "ResonatingBell" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.RESONATINGBELL);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "SparkPlug" + ".json");
+            file.deleteOnExit();
+            //writer = new PrintWriter(file);
+            //writer.println(IOInit.SPARKPLUG);
+            //writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Stirling" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.STIRLING);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Superheater" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.SUPERHEATER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "Tank" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.TANK);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "TinkerHammer" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.TINKERHAMMER);
+            writer.flush();
+
+            file = new File(event.getModConfigurationDirectory(), path +  "TinkerLens" + ".json");
+            file.deleteOnExit();
+            writer = new PrintWriter(file);
+            writer.println(IOInit.TINKERLENS);
+            writer.flush();
+
+            writer.close();
+        }
+        catch(IOException e) {
+        }
+    }
 
 }
